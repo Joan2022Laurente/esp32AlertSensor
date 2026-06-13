@@ -3,8 +3,8 @@ import axios from 'axios';
 
 // ─── Supabase client (server-side only, usa service_role key) ─────────
 const supabase = createClient(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_SERVICE_KEY
+    process.env.SUPABASE_URL || 'https://placeholder.supabase.co',
+    process.env.SUPABASE_SERVICE_KEY || 'placeholder'
 );
 
 // ─── Validar credenciales ─────────────────────────────────────────────
